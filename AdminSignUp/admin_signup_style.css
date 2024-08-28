@@ -1,0 +1,49 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgb(19, 120, 148), rgb(212, 77, 19));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    margin-top: 200px;
+}
+.contact-form img{
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.contact-form h2{
+    margin-bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+.txtb{
+    padding: 20px;
+}
+.txtb input{
+    font-size: 25px;
+}
+
+.logbtn{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(59, 218, 31);
+    font-size: 27px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logbtn:hover{
+    background-color: rgb(4, 165, 15);
+}
