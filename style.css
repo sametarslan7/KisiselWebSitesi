@@ -1,0 +1,64 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+
+body{
+    color: white;
+    font-family: sans-serif;
+    background-image: url(background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center .avatar img{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: 5%;
+}
+.center{
+    width: 600px;
+    background-color: rgba(0, 0,0,0.7);
+    height: 550px;
+    border-radius: 2%;
+}
+
+.content{
+    padding: 30px;
+}
+h1{
+    color: wheat;
+
+}
+
+.content h2,p{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.content h3{
+    margin-top: 30px;
+}
+
+.social i{
+    color: gray;
+    padding: 0px 10px;
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+.social i:hover{
+    color: white;
+}
+
+
+
+
