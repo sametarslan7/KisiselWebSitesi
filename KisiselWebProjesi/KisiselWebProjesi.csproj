@@ -132,6 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classes\Admin.cs" />
     <Compile Include="Models\Classes\Context.cs" />
     <Compile Include="Models\Classes\Icons.cs" />
@@ -183,6 +184,8 @@
     <Content Include="view-AdminSignUp\newuser-Photoroom.png" />
     <Content Include="view-KisiselWebSitesi\8644456.png" />
     <Content Include="view-KisiselWebSitesi\anasyfa-Photoroom.png" />
+    <Content Include="view-KisiselWebSitesi\backgr.jpg" />
+    <Content Include="view-KisiselWebSitesi\bg_img.jpg" />
     <Content Include="view-KisiselWebSitesi\IMG_8994.jpg" />
     <Content Include="view-KisiselWebSitesi\index.html" />
     <Content Include="view-KisiselWebSitesi\style.css" />
@@ -205,6 +208,7 @@
     <Content Include="view-KisiselWebSitesi\.vs\KisiselWebSitesi\v17\.suo" />
     <Content Include="view-KisiselWebSitesi\background.webp" />
     <Content Include="Views\MainPage\Index.cshtml" />
+    <Content Include="Views\MainPage\Icons.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

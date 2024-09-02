@@ -3,10 +3,10 @@
     padding: 0;
 }
 
-body{
-    color: white;
+body {
+    color: white ;
     font-family: sans-serif;
-    background-image: url(../view-KisiselWebSitesi/background.webp);
+    background-image: url(backgr.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
