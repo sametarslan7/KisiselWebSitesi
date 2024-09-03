@@ -18,5 +18,25 @@ namespace KisiselWebProjesi.Controllers
 
             return View(deger);
         }
+
+        public ActionResult BilgileriGoster(int id)
+        {
+            var bilgilerigoster = c.MainPages.Find(id);
+            return View("BilgileriGoster",bilgilerigoster);
+        }
+
+        public ActionResult BilgileriGuncelle( MainPage parametre)
+        {
+            var anasayfa = c.MainPages.Find(parametre.id);
+            anasayfa.name = parametre.name;
+            anasayfa.title = parametre.title;   
+            anasayfa.description = parametre.description;
+            anasayfa.contact = parametre.contact;
+
+            c.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
     }
 }

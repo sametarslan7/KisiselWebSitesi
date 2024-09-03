@@ -2,6 +2,7 @@
 @model List<MainPage>
 @{
     Layout = null;
+    var firstItem = Model.FirstOrDefault();
 }
 
 <!DOCTYPE html>
@@ -15,32 +16,28 @@
 </head>
 <body>
     <div class="admin_icon">
-        <a href="#">
+        <a href="@Url.Action("Index","Admin")">
             <img src="~/view-KisiselWebSitesi/8644456.png">
         </a>
         <h3>ADMİN</h3>
     </div>
     <div class="center">
         <div class="avatar">
-            @foreach (var x in Model)
-            {
-                <img src="@x.profile_photo" alt="profile resmi">
-            }
+
+            <img src="@firstItem.profile_photo" alt="profile resmi">
+
 
         </div>
         <div class="content">
-            @foreach (var x in Model)
-            {
-                <h1>@x.name</h1>
-                <h2>@x.title</h2>
-                <p>
-                    @x.description
-                </p>
-                <h3> @x.contact </h3>
-            }
 
+            <h1>@firstItem.name</h1>
+            <h2>@firstItem.title</h2>
+            <p>
+                @firstItem.description
+            </p>
+            <h3> @firstItem.contact </h3>
         </div>
-        @Html.Action("Icons","MainPage")
+        @Html.Action("Icons", "MainPage")
     </div>
 </body>
 </html>

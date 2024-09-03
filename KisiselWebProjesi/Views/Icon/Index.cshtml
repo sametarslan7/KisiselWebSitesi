@@ -1,24 +1,26 @@
-﻿
-@using KisiselWebProjesi.Models.Classes
-@model List<MainPage>
+﻿@using KisiselWebProjesi.Models.Classes
+@model List<Icons>
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+
 <table class="table table-bordered mt-3">
     <tr>
         <th> ID </th>
-        <th> İsim </th>
+        <th> İkon </th>
+        <th> Link</th>
         <th> Güncelle </th>
     </tr>
     @foreach (var x in Model)
     {
         <tr>
             <td>@x.id</td>
-            <td>@x.name</td>
-            <td><a href="@Url.Action("BilgileriGoster", "Admin", new { id = x.id })" class="btn btn-primary">Güncelle</a></td>
+            <td>@x.icon_name</td>
+            <td>@x.icon_link</td>
+            <td><a href="@Url.Action("IkonlariGoster", "Icon", new { id = x.id })" class="btn btn-primary">Güncelle</a></td>
         </tr>
     }
 
