@@ -12,6 +12,7 @@ namespace KisiselWebProjesi.Controllers
         Context c = new Context();
 
         // GET: Admin
+        [Authorize]
         public ActionResult Index()
         {
             var deger=c.MainPages.ToList();

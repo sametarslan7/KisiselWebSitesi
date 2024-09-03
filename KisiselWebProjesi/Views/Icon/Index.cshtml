@@ -23,7 +23,7 @@
             <td><i class="@x.icon_name" style="font-size:30px"></i></td>
             <td>@x.icon_link</td>
             <td><a href="@Url.Action("IkonlariGoster", "Icon", new { id = x.id })" class="btn btn-primary">Güncelle</a></td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
+            <td><a href="@Url.Action("IkonSil", "Icon", new { id = x.id })" class="btn btn-danger">Sil</a></td>
         </tr>
     }
 </table>

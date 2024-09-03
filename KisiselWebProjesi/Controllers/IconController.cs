@@ -46,5 +46,13 @@ namespace KisiselWebProjesi.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult IkonSil(int id)
+        {
+            var sil= c.Icons.Find(id);
+            c.Icons.Remove(sil);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }
