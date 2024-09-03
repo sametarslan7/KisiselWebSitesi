@@ -38,5 +38,11 @@ namespace KisiselWebProjesi.Controllers
 
         }
 
+        public ActionResult AdminleriGoster()
+        {
+            var deger = c.Admins.ToList();
+            return View(deger);
+        }
+
     }
 }

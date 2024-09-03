@@ -34,6 +34,17 @@ namespace KisiselWebProjesi.Controllers
             return RedirectToAction("Index");
 
         }
-
+        [HttpGet]
+        public ActionResult YeniIkonEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniIkonEkle( Icons i)
+        {
+            c.Icons.Add(i);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

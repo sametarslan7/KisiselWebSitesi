@@ -216,6 +216,8 @@
     <Content Include="Views\Admin\BilgileriGoster.cshtml" />
     <Content Include="Views\Icon\Index.cshtml" />
     <Content Include="Views\Icon\IkonlariGoster.cshtml" />
+    <Content Include="Views\Admin\AdminleriGoster.cshtml" />
+    <Content Include="Views\Icon\YeniIkonEkle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
