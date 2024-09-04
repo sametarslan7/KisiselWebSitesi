@@ -135,11 +135,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202409031725372_MigrationName.cs" />
+    <Compile Include="Migrations\202409031725372_MigrationName.designer.cs">
+      <DependentUpon>202409031725372_MigrationName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409031728464_AddingNewTables.cs" />
+    <Compile Include="Migrations\202409031728464_AddingNewTables.designer.cs">
+      <DependentUpon>202409031728464_AddingNewTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classes\Admin.cs" />
+    <Compile Include="Models\Classes\Bilgiler.cs" />
     <Compile Include="Models\Classes\Context.cs" />
+    <Compile Include="Models\Classes\Experience.cs" />
     <Compile Include="Models\Classes\Icons.cs" />
     <Compile Include="Models\Classes\MainPage.cs" />
+    <Compile Include="Models\Classes\Sertificiate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -220,6 +231,11 @@
     <Content Include="Views\Admin\AdminleriGoster.cshtml" />
     <Content Include="Views\Icon\YeniIkonEkle.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\MainPage\Experience.cshtml" />
+    <Content Include="Views\MainPage\Sertificiate.cshtml" />
+    <Content Include="Views\MainPage\DeneyimGoster.cshtml" />
+    <Content Include="Views\MainPage\YeniDeneyimEkle.cshtml" />
+    <Content Include="Views\MainPage\ExperienceIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -250,6 +266,14 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202409031725372_MigrationName.resx">
+      <DependentUpon>202409031725372_MigrationName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409031728464_AddingNewTables.resx">
+      <DependentUpon>202409031728464_AddingNewTables.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

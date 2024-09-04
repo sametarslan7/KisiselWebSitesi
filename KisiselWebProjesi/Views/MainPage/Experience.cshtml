@@ -1,0 +1,15 @@
+﻿@using KisiselWebProjesi.Models.Classes
+@model List<Experience>
+
+<br />
+<h2>Deneyimler</h2>
+<hr style="width:200px">
+<br />
+<form style="text-align: left;">
+    @foreach (var x in Model)
+    {
+        <h4>@x.experience_name</h4>
+        <p>@x.experience_description</p>
+        <br />
+    }
+</form>

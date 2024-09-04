@@ -17,21 +17,23 @@
     <br />
 
     @Html.LabelFor(x => x.name)
-    @Html.TextBoxFor(x => x.name, new { @class = "form-control"})
+    @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
     <br />
 
     @Html.LabelFor(x => x.title)
-    @Html.TextBoxFor(x => x.title, new { @class = "form-control"})
+    @Html.TextBoxFor(x => x.title, new { @class = "form-control" })
     <br />
 
     @Html.LabelFor(x => x.description)
-    @Html.TextAreaFor(x => x.description, new { @class = "form-control"})
+    @Html.TextAreaFor(x => x.description, new { @class = "form-control" })
     <br />
 
     @Html.LabelFor(x => x.contact)
-    @Html.TextBoxFor(x => x.contact, new { @class = "form-control"})
+    @Html.TextBoxFor(x => x.contact, new { @class = "form-control" })
     <br />
-
+    <a class="btn btn-info" href="@Url.Action("Experience","MainPage")">Deneyimlere Gözat</a>
+    <br />
+    <br />
     <button class="btn btn-success"> Bilgileri Güncelle </button>
 
 }

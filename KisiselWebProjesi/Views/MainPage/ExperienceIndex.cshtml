@@ -1,0 +1,30 @@
+﻿@using KisiselWebProjesi.Models.Classes
+@model List<Experience>
+@{
+    ViewBag.Title = "Experience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>İkonlar</h3>
+<table class="table table-bordered mt-3" style="font-size:18px ; width:1000px">
+    <tr>
+        <th> ID </th>
+        <th> Deneyim Adı </th>
+        <th> Deneyim Açıklaması</th>
+        <th> Güncelle </th>
+        <th> Sil </th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.experience_name</td>
+            <td>@x.experience_description</td>
+            <td><a href="@Url.Action("DeneyimGoster", "MainPage", new { id = x.id })" class="btn btn-primary">Güncelle</a></td>
+            <td><a href="@Url.Action("DeneyimSil", "MainPage", new { id = x.id })" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<div>
+    <a href="@Url.Action("YeniDeneyimEkle","MainPage")" class="btn btn-info" style="font-size:20px">Yeni Deneyim Ekle</a>
+</div>

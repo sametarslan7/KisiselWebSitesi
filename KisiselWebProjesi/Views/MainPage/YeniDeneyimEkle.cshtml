@@ -1,0 +1,19 @@
+﻿@model KisiselWebProjesi.Models.Classes.Experience
+
+@{
+    ViewBag.Title = "YeniDeneyimEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Yeni Deneyim Ekle</h3>
+<br />
+<form class="form-group" method="post" style="font-size:20px">
+    @Html.LabelFor(x => x.experience_name)
+    @Html.TextBoxFor(x => x.experience_name, new { @class = "form-control" })
+
+    <br />
+    @Html.LabelFor(x => x.experience_description)
+    @Html.TextBoxFor(x => x.experience_description, new { @class = "form-control" })
+    <br />
+    <button style="font-size:20px" class="btn btn-success">Deneyim Ekle</button>
+</form>

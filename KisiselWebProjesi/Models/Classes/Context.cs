@@ -11,6 +11,8 @@ namespace KisiselWebProjesi.Models.Classes
         public DbSet<Admin> Admins { get; set; }
         public DbSet<MainPage> MainPages { get; set; }
         public DbSet<Icons> Icons { get; set; }
+        public DbSet<Experience> Experiences { get; set; }
+        public DbSet<Sertificiate> Sertificiates { get; set; }
 
     }
 }

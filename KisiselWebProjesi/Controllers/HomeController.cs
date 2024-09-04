@@ -26,5 +26,7 @@ namespace KisiselWebProjesi.Controllers
 
             return View();
         }
+
+
     }
 }

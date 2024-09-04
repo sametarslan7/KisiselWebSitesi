@@ -1,0 +1,15 @@
+﻿@using KisiselWebProjesi.Models.Classes
+@model List<Sertificiate>
+
+<br />
+<h2>Sertifikalar</h2>
+<hr style="width:200px">
+<br />
+<form style="text-align: left;">
+    @foreach (var x in Model)
+    {
+        <h4>@x.sertificiate_name</h4>
+        <p>@x.sertificiate_description</p>
+        <br />
+    }
+</form>

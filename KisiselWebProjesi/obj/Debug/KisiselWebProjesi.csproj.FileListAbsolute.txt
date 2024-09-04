@@ -58,3 +58,6 @@ C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\bin\EntityFramework.dl
 C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\bin\EntityFramework.SqlServer.dll
 C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\bin\EntityFramework.xml
 C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\obj\Debug\KisiselWebProjesi.Migrations.MigrationName.resources
+C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\obj\Debug\KisiselWebProjesi.csproj.GenerateResource.cache
+C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\obj\Debug\KisiselWebProjesi.Migrations.AddingNewTables.resources
