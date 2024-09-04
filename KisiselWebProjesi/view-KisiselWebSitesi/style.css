@@ -23,11 +23,15 @@ body {
     height: 140px;
     margin-top: 5%;
 }
-.center{
+.center {
     width: 600px;
     background-color: rgba(0, 0,0,0.7);
-    height: 950px;
+    min-height: 750px;
+    height: auto;
     border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .content{
@@ -74,27 +78,71 @@ h1{
     width: 70px;
     height: 70px;
 }
-
-@media screen and (max-width:700px){
-    .center{
-        width: 300px;
-        height: 700px;
+@media screen and (max-width: 700px) {
+    .center {
+        width: 90%; /* Ekranýn geniþliðine göre ayarlanýr */
+        min-height: 700px; /* Minimum height smaller for mobile */
+        padding: 20px;
     }
-    h1{
+
+        .center .avatar img {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+
+    h1 {
         font-size: 22px;
     }
-    h1{
+
+    .content h2, p {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .content h3 {
         font-size: 16px;
     }
-    p{
-        width: 90%;
-        font-size: 12px;
-    }
-    h3{
+
+    p {
         font-size: 14px;
     }
-    .social a i{
-        font-size: 30px;
+
+    .social i {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .center {
+        width: 100%; /* Mobile devices take full width */
+        min-height: 600px;
+        padding: 15px;
+    }
+
+        .center .avatar img {
+            width: 80px;
+            height: 80px;
+            margin-top: 15px;
+        }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .content h2, p {
+        font-size: 14px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .social i {
+        font-size: 20px;
     }
 }
 

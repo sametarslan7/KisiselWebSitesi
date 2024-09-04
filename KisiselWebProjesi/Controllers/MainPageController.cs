@@ -49,7 +49,7 @@ namespace KisiselWebProjesi.Controllers
             anasayfa.experience_description = exp.experience_description;
 
             c.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Admin");
 
         }
         [HttpGet]
@@ -62,7 +62,7 @@ namespace KisiselWebProjesi.Controllers
         {
             c.Experiences.Add(exp);
             c.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Admin");
         }
 
         public ActionResult DeneyimSil(int id)
@@ -70,7 +70,7 @@ namespace KisiselWebProjesi.Controllers
             var sil = c.Experiences.Find(id);
             c.Experiences.Remove(sil);
             c.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Admin");
         }
         //SERTİFİKA ALANI
         public ActionResult Sertificiate()
@@ -96,7 +96,7 @@ namespace KisiselWebProjesi.Controllers
             anasayfa.sertificiate_description = srt.sertificiate_description;
 
             c.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Admin");
         }
         [HttpGet]
         public ActionResult YeniSertifikaEkle()
@@ -108,14 +108,14 @@ namespace KisiselWebProjesi.Controllers
         {
             c.Sertificiates.Add(srt);
             c.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Admin");
         }
         public ActionResult SertifikaSil(int id)
         {
             var sil = c.Sertificiates.Find(id);
             c.Sertificiates.Remove(sil);
             c.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Admin");
         }
     }
 }
