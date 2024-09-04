@@ -236,6 +236,9 @@
     <Content Include="Views\MainPage\DeneyimGoster.cshtml" />
     <Content Include="Views\MainPage\YeniDeneyimEkle.cshtml" />
     <Content Include="Views\MainPage\ExperienceIndex.cshtml" />
+    <Content Include="Views\MainPage\SertificiateIndex.cshtml" />
+    <Content Include="Views\MainPage\SertifikaGoster.cshtml" />
+    <Content Include="Views\MainPage\YeniSertifikaEkle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

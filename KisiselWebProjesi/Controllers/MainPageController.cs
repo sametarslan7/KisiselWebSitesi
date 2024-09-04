@@ -72,11 +72,50 @@ namespace KisiselWebProjesi.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        //SERTİFİKA ALANI
         public ActionResult Sertificiate()
         {
             var deger= c.Sertificiates.ToList();
             return PartialView(deger);
+        }
+        public ActionResult SertificiateIndex()
+        {
+            var deger = c.Sertificiates.ToList();
+            return PartialView(deger);
+        }
+        public ActionResult SertifikaGoster(int id)
+        {
+            var deneyimgoster = c.Sertificiates.Find(id);
+            return View("SertifikaGoster", deneyimgoster);
+        }
+
+        public ActionResult SertifikaGuncelle(Sertificiate srt)
+        {
+            var anasayfa = c.Sertificiates.Find(srt.id);
+            anasayfa.sertificiate_name = srt.sertificiate_name;
+            anasayfa.sertificiate_description = srt.sertificiate_description;
+
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult YeniSertifikaEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniSertifikaEkle(Sertificiate srt)
+        {
+            c.Sertificiates.Add(srt);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult SertifikaSil(int id)
+        {
+            var sil = c.Sertificiates.Find(id);
+            c.Sertificiates.Remove(sil);
+            c.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

@@ -1,0 +1,19 @@
+﻿@model KisiselWebProjesi.Models.Classes.Sertificiate
+
+@{
+    ViewBag.Title = "YeniSertifikaEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Yeni Sertifika Ekle</h3>
+<br />
+<form class="form-group" method="post" style="font-size:20px">
+    @Html.LabelFor(x => x.sertificiate_name)
+    @Html.TextBoxFor(x => x.sertificiate_name, new { @class = "form-control" })
+
+    <br />
+    @Html.LabelFor(x => x.sertificiate_description)
+    @Html.TextBoxFor(x => x.sertificiate_description, new { @class = "form-control" })
+    <br />
+    <button style="font-size:20px" class="btn btn-success">Sertifika Ekle</button>
+</form>

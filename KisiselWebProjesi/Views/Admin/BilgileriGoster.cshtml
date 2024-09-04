@@ -31,7 +31,10 @@
     @Html.LabelFor(x => x.contact)
     @Html.TextBoxFor(x => x.contact, new { @class = "form-control" })
     <br />
-    <a class="btn btn-info" href="@Url.Action("Experience","MainPage")">Deneyimlere Gözat</a>
+    <a class="btn btn-info" href="@Url.Action("ExperienceIndex","MainPage")">Deneyimlere Gözat</a>
+    <br />
+    <br />
+    <a class="btn btn-info" href="@Url.Action("SertificiateIndex","MainPage")">Sertifikalara Gözat</a>
     <br />
     <br />
     <button class="btn btn-success"> Bilgileri Güncelle </button>
