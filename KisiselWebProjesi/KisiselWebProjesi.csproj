@@ -143,6 +143,10 @@
     <Compile Include="Migrations\202409031728464_AddingNewTables.designer.cs">
       <DependentUpon>202409031728464_AddingNewTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202409091610185_newmigration.cs" />
+    <Compile Include="Migrations\202409091610185_newmigration.designer.cs">
+      <DependentUpon>202409091610185_newmigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classes\Admin.cs" />
     <Compile Include="Models\Classes\Bilgiler.cs" />
@@ -150,6 +154,7 @@
     <Compile Include="Models\Classes\Experience.cs" />
     <Compile Include="Models\Classes\Icons.cs" />
     <Compile Include="Models\Classes\MainPage.cs" />
+    <Compile Include="Models\Classes\Projects.cs" />
     <Compile Include="Models\Classes\Sertificiate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -190,6 +195,38 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="steller\imgs\avatar-1.jpg" />
+    <Content Include="steller\imgs\avatar-2.jpg" />
+    <Content Include="steller\imgs\avatar-3.jpg" />
+    <Content Include="steller\imgs\avatar.jpg" />
+    <Content Include="steller\imgs\blog-1.jpg" />
+    <Content Include="steller\imgs\blog-2.jpg" />
+    <Content Include="steller\imgs\blog-3.jpg" />
+    <Content Include="steller\imgs\default-Photoroom.png" />
+    <Content Include="steller\imgs\folio-1.jpg" />
+    <Content Include="steller\imgs\folio-2.jpg" />
+    <Content Include="steller\imgs\folio-3.jpg" />
+    <Content Include="steller\imgs\folio-4.jpg" />
+    <Content Include="steller\imgs\folio-5.jpg" />
+    <Content Include="steller\imgs\folio-6.jpg" />
+    <Content Include="steller\imgs\IMG_8994.jpg" />
+    <Content Include="steller\imgs\logo.svg" />
+    <Content Include="steller\imgs\man.svg" />
+    <Content Include="steller\imgs\pc.png" />
+    <Content Include="steller\index.html" />
+    <Content Include="steller\style2.css" />
+    <Content Include="steller\style3.css" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.affix.js" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.bundle.js" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.bundle.min.js" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.js" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.min.js" />
+    <Content Include="steller\vendors\jquery\jquery-3.4.1.js" />
+    <Content Include="steller\vendors\jquery\jquery-3.4.1.min.js" />
+    <Content Include="steller\vendors\jquery\jquery-3.4.1.slim.js" />
+    <Content Include="steller\vendors\jquery\jquery-3.4.1.slim.min.js" />
+    <Content Include="steller\vendors\themify-icons\css\themify-icons.css" />
+    <Content Include="steller\vendors\themify-icons\fonts\themify.svg" />
     <Content Include="view-AdminLogin\admin-Photoroom.png" />
     <Content Include="view-AdminLogin\admin.html" />
     <Content Include="view-AdminLogin\admin_style.css" />
@@ -202,7 +239,10 @@
     <Content Include="view-KisiselWebSitesi\bg_img.jpg" />
     <Content Include="view-KisiselWebSitesi\IMG_8994.jpg" />
     <Content Include="view-KisiselWebSitesi\index.html" />
+    <Content Include="view-KisiselWebSitesi\message_icon.png" />
     <Content Include="view-KisiselWebSitesi\style.css" />
+    <Content Include="view-KisiselWebSitesi\style2.css" />
+    <Content Include="view-KisiselWebSitesi\style3.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -239,6 +279,19 @@
     <Content Include="Views\MainPage\SertificiateIndex.cshtml" />
     <Content Include="Views\MainPage\SertifikaGoster.cshtml" />
     <Content Include="Views\MainPage\YeniSertifikaEkle.cshtml" />
+    <Content Include="Views\MainPage\Project.cshtml" />
+    <Content Include="Views\MainPage\ProjectIndex.cshtml" />
+    <Content Include="Views\MainPage\ProjeGoster.cshtml" />
+    <Content Include="Views\MainPage\YeniProjeEkle.cshtml" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.bundle.js.map" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.bundle.min.js.map" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.js.map" />
+    <Content Include="steller\vendors\bootstrap\bootstrap.min.js.map" />
+    <Content Include="steller\vendors\jquery\jquery-3.4.1.min.map" />
+    <Content Include="steller\vendors\jquery\jquery-3.4.1.slim.min.map" />
+    <Content Include="steller\vendors\themify-icons\fonts\themify.eot" />
+    <Content Include="steller\vendors\themify-icons\fonts\themify.ttf" />
+    <Content Include="steller\vendors\themify-icons\fonts\themify.woff" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,6 +329,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202409031728464_AddingNewTables.resx">
       <DependentUpon>202409031728464_AddingNewTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409091610185_newmigration.resx">
+      <DependentUpon>202409091610185_newmigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

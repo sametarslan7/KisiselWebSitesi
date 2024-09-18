@@ -1,0 +1,33 @@
+﻿@model KisiselWebProjesi.Models.Classes.Projects
+
+
+@{
+    ViewBag.Title = "ProjeGoster";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4">Proje Güncelle</h2>
+
+<hr />
+
+@using (Html.BeginForm("ProjeGuncelle", "MainPage", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+
+    @Html.LabelFor(x => x.project_name)
+    @Html.TextBoxFor(x => x.project_name, new { @class = "form-control" })
+    <br />
+
+    @Html.LabelFor(x => x.project_photo)
+    @Html.TextBoxFor(x => x.project_photo, new { @class = "form-control" })
+    <br />
+
+    @Html.LabelFor(x => x.project_link)
+    @Html.TextBoxFor(x => x.project_link, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success"> Projeyi Güncelle </button>
+
+}

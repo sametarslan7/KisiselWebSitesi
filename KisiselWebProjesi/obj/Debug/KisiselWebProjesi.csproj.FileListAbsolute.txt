@@ -61,3 +61,4 @@ C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\bin\EntityFramework.Sq
 C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\obj\Debug\KisiselWebProjesi.Migrations.MigrationName.resources
 C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\obj\Debug\KisiselWebProjesi.csproj.GenerateResource.cache
 C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\obj\Debug\KisiselWebProjesi.Migrations.AddingNewTables.resources
+C:\Users\user\Desktop\KisiselWebProjesi\KisiselWebProjesi\obj\Debug\KisiselWebProjesi.Migrations.newmigration.resources

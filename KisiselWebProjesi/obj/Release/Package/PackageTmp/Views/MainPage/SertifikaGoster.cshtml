@@ -1,0 +1,29 @@
+﻿@model KisiselWebProjesi.Models.Classes.Sertificiate
+
+@{
+    ViewBag.Title = "SertifikaGoster";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4">Sertifika Güncelle</h2>
+
+<hr />
+
+@using (Html.BeginForm("SertifikaGuncelle", "MainPage", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+
+    @Html.LabelFor(x => x.sertificiate_name)
+    @Html.TextBoxFor(x => x.sertificiate_name, new { @class = "form-control" })
+    <br />
+
+    @Html.LabelFor(x => x.sertificiate_description)
+    @Html.TextBoxFor(x => x.sertificiate_description, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success"> Sertifikayı Güncelle </button>
+
+}
+

@@ -117,5 +117,50 @@ namespace KisiselWebProjesi.Controllers
             c.SaveChanges();
             return RedirectToAction("Index","Admin");
         }
+        public ActionResult Project()
+        {
+            var deger = c.Projects.ToList();
+            return PartialView(deger);
+        }
+        public ActionResult ProjectIndex()
+        {
+            var deger = c.Projects.ToList();
+            return PartialView(deger);
+        }
+        public ActionResult ProjeGoster(int id)
+        {
+            var deneyimgoster = c.Projects.Find(id);
+            return View("ProjeGoster", deneyimgoster);
+        }
+
+        public ActionResult ProjeGuncelle(Projects prj)
+        {
+            var anasayfa = c.Projects.Find(prj.id);
+            anasayfa.project_name = prj.project_name;
+            anasayfa.project_photo = prj.project_photo;
+            anasayfa.project_link = prj.project_link;
+
+            c.SaveChanges();
+            return RedirectToAction("Index", "Admin");
+        }
+        [HttpGet]
+        public ActionResult YeniProjeEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniProjeEkle(Projects prj)
+        {
+            c.Projects.Add(prj);
+            c.SaveChanges();
+            return RedirectToAction("Index", "Admin");
+        }
+        public ActionResult ProjeSil(int id)
+        {
+            var sil = c.Projects.Find(id);
+            c.Projects.Remove(sil);
+            c.SaveChanges();
+            return RedirectToAction("Index", "Admin");
+        }
     }
 }

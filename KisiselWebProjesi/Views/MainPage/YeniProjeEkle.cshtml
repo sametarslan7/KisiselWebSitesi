@@ -1,0 +1,23 @@
+﻿@model KisiselWebProjesi.Models.Classes.Projects
+
+
+@{
+    ViewBag.Title = "YeniProjeEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Yeni Proje Ekle</h3>
+<br />
+<form class="form-group" method="post" style="font-size:20px">
+    @Html.LabelFor(x => x.project_name)
+    @Html.TextBoxFor(x => x.project_name, new { @class = "form-control" })
+
+    <br />
+    @Html.LabelFor(x => x.project_photo)
+    @Html.TextBoxFor(x => x.project_photo, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.project_link)
+    @Html.TextBoxFor(x => x.project_link, new { @class = "form-control" })
+    <br />
+    <button style="font-size:20px" class="btn btn-success">Sertifika Ekle</button>
+</form>

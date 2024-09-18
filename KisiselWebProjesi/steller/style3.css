@@ -1,0 +1,199 @@
+#projects .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #projects .col-sm-4 {
+            flex: 0 0 30%; /* Kolon genişliği yüzde 30 olacak şekilde ayarlandı */
+            margin: 0 5px; /* Kolonlar arasında boşluk bırakıldı */
+            box-sizing: border-box;
+        }
+
+        .project-card {
+            position: relative; /* Overlay için relative pozisyon */
+            margin-bottom: 20px;
+            border: 1px solid #ddd; /* Kartın etrafına ince bir sınır ekle */
+            border-radius: 0.25rem;
+            overflow: hidden;
+            height:280px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height:200px;
+            padding:10px;
+            display: block;
+            border-radius: 0.25rem;
+        }
+
+        .project-title {
+            font-size: 18px;
+            padding-left:10px;
+            font-weight: bold;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Siyah yarı saydam arka plan */
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .overlay-infos {
+            color: #fff;
+        }
+
+        .overlay-infos h5 {
+            margin-bottom: 10px;
+        }
+
+        .overlay a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .project-card:hover .overlay {
+            opacity: 1;
+        }
+        #certificates .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #certificates .col-sm-3 {
+            flex: 0 0 23%; /* Kolon genişliği yüzde 23 olacak şekilde ayarlandı */
+            margin: 0 5px; /* Kolonlar arasında boşluk bırakıldı */
+            box-sizing: border-box;
+        }
+
+        .certificate-card {
+            border: 1px solid #ddd; /* Kartın etrafına ince bir sınır ekle */
+            padding: 10px; /* İç boşluk ekle */
+            border-radius: 0.25rem; /* Kenarları yuvarla */
+            text-align: left; /* Yazıları sola hizala */
+            margin-bottom: 10px; /* Kartlar arasında boşluk bırak */
+            background-color: #f9f9f9; /* Arka plan rengi */
+            height:270px;
+        }
+
+        .certificate-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .certificate-card img {
+            width: 100%; /* Yüzde genişlik ayarlandı */
+            height: 150px; /* Sabit bir yükseklik ayarlandı */
+            object-fit: cover; /* Resimleri kapsayıcı şekilde kırp */
+            border-radius: 0.25rem;
+            margin-bottom: 10px;
+        }
+         #portfolio .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #portfolio .col-sm-4 {
+            flex: 0 0 45%; /* Kolon genişliği yüzde 45 olacak şekilde ayarlandı */ 
+            margin: 0 5px;
+            box-sizing: border-box;
+        }
+
+        .experience-card {
+            border: 1px solid #ddd; /* Kartın etrafına ince bir sınır ekle */
+            padding: 20px; /* İç boşluk ekle */
+            border-radius: 0.25rem; /* Kenarları yuvarla */
+            text-align: left; /* Yazıları sola hizala */
+            margin-bottom: 20px; /* Kartlar arasında boşluk bırak */
+            background-color: #f9f9f9; /* Arka plan rengi */
+        }
+
+        .experience-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .experience-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+@media (max-width: 700px) {
+    .col-sm-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* İki sütun oluşturur */
+        gap: 20px; /* Sertifikalar arasında boşluk */
+        justify-content: center; /* Kapsayıcı içinde ortala */
+    }
+
+    .certificate-card {
+        width: 100%; /* Sertifikaların genişliği, grid container'a göre ayarlanır */
+        margin-left: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .certificate-title {
+        font-size: 16px; /* Yazı boyutunu kutuya uyacak şekilde ayarla */
+        font-weight: bold;
+        margin-bottom: 10px;
+        white-space: normal; /* Metnin birden fazla satıra yayılmasını sağlar */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Taşan metni '...' ile kes */
+    }
+
+    .col-sm-4 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* İki sütun oluşturur */
+        gap: 20px; /* Sertifikalar arasında boşluk */
+        justify-content: center; /* Kapsayıcı içinde ortala */
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column; /* İçeriği dikey olarak hizala */
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+        border: 1px solid #ddd; /* İsteğe bağlı sınır */
+        border-radius: 0.25rem; /* Kenarları yuvarla */
+        overflow: hidden; /* Taşmayı engelle */
+    }
+
+    .project-card img {
+            width: 100%;
+            height: 200px; /* Sabit bir yükseklik ayarla */
+            border-bottom: 1px solid #ddd; /* Başlık ile resim arasına sınır ekle */
+    }
+
+    .project-title {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px; /* İç boşluk ekle */
+        margin: 0; /* Marjini sıfırla */
+        white-space: normal; /* Metni çok satırlı yap */
+        overflow: hidden; /* Taşmayı engelle */
+        text-overflow: ellipsis; /* Taşan metni '...' ile kes */
+    }
+
+    .experience-card {
+        width: 300px !important;
+        margin-left: 100px !important;
+    }
+}

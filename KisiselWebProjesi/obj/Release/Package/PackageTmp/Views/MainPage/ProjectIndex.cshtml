@@ -1,0 +1,35 @@
+﻿@using KisiselWebProjesi.Models.Classes
+@model List<Projects>
+
+
+@{
+    ViewBag.Title = "ProjectIndex";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Projeler</h2>
+
+<table class="table table-bordered mt-3" style="font-size:18px ; width:1000px">
+    <tr>
+        <th> ID </th>
+        <th> Proje Ad </th>
+        <th> Proje Fotoğraf </th>
+        <th> Proje Link </th>
+        <th> Güncelle </th>
+        <th> Sil </th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.project_name</td>
+            <td>@x.project_photo</td>
+            <td>@x.project_link</td>
+            <td><a href="@Url.Action("ProjeGoster", "MainPage", new { id = x.id })" class="btn btn-primary">Güncelle</a></td>
+            <td><a href="@Url.Action("ProjeSil", "MainPage", new { id = x.id })" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<div>
+    <a href="@Url.Action("YeniProjeEkle","MainPage")" class="btn btn-info" style="font-size:20px">Yeni ProjeEkle Ekle</a>
+</div>

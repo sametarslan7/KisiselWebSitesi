@@ -13,6 +13,6 @@ namespace KisiselWebProjesi.Models.Classes
         public DbSet<Icons> Icons { get; set; }
         public DbSet<Experience> Experiences { get; set; }
         public DbSet<Sertificiate> Sertificiates { get; set; }
-
+        public DbSet<Projects> Projects { get; set; }
     }
 }

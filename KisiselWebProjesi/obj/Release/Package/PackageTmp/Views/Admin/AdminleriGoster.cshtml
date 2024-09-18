@@ -1,0 +1,30 @@
+﻿
+@using KisiselWebProjesi.Models.Classes
+@model List<Admin>
+
+@{
+    ViewBag.Title = "AdminleriGoster";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Bilgileri Güncelle</h2>
+<table class="table table-bordered mt-3">
+    <tr>
+        <th> ID </th>
+        <th> İsim </th>
+        <th> Mail </th>
+        <th> Password </th>
+        <th> Güncelle </th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.username</td>
+            <td>@x.mail</td>
+            <td>@x.password</td>
+            <td><a href="#" class="btn btn-primary">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+

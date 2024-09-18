@@ -1,0 +1,45 @@
+﻿@using KisiselWebProjesi.Models.Classes
+@model List<Projects>
+
+
+@*
+
+    @foreach (var x in Model)
+    {
+
+            <!-- Projeler burada resimli olarak gösterilecek -->
+            <div class="project-item" style="padding-left:20px;">
+                <div class="project-title-item">@x.project_name</div>
+                <div class="project-img-container">
+                    <img class="project-img" src="@x.project_photo" alt="Proje 1">
+                </div>
+                <div class="project-title-item">
+                <a href="@x.project_link">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+                </div>
+            </div>
+            <!-- Daha fazla proje ekleyebilirsiniz -->
+
+    }*@
+
+<div class="row">
+    @foreach (var x in Model)
+    {
+        <div class="col-sm-4">
+            <div class="project-card">
+                <div class="project-title">@x.project_name</div>
+                <img src="@x.project_photo" alt="Project 2">
+                <div class="overlay">
+                    <div class="overlay-infos">
+                        <h5>@x.project_name</h5>
+                        <a href="@x.project_link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
+
